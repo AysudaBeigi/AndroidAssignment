@@ -1,8 +1,6 @@
 package ir.miare.androidcodechallenge.domain.usecase
 
 import com.jabama.challenge.domain.IGithubRepository
-import ir.miare.androidcodechallenge.domain.model.RequestAccessToken
-import ir.miare.androidcodechallenge.domain.model.ResponseAccessToken
 
 private const val CLIENT_ID = "Ov23lieNfZen0Ac2lX66"
 private const val CLIENT_SECRET = "b49541b80e0b3db47a8e5a785749f1fdf32baa27"

@@ -34,7 +34,6 @@ import com.jabama.challenge.base.LoadableData
 import com.jabama.challenge.base.Loaded
 import com.jabama.challenge.base.Loading
 import com.jabama.challenge.base.NotLoaded
-import ir.miare.androidcodechallenge.domain.model.Repository
 import com.jabama.challenge.github.R
 
 @Composable

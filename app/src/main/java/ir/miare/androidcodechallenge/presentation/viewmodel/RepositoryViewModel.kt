@@ -2,13 +2,8 @@ package ir.miare.androidcodechallenge.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.jabama.challenge.base.CoroutineDispatcherProvider
-import com.jabama.challenge.base.Failed
-import com.jabama.challenge.base.LoadableData
-import com.jabama.challenge.base.Loaded
-import com.jabama.challenge.base.Loading
-import com.jabama.challenge.base.NotLoaded
-import ir.miare.androidcodechallenge.domain.model.Repository
+import ir.miare.androidcodechallenge.base.CoroutineDispatcherProvider
+import ir.miare.androidcodechallenge.base.LoadableData
 import ir.miare.androidcodechallenge.domain.usecase.GetRepositoryListUseCase
 import ir.miare.androidcodechallenge.domain.usecase.ReadTokenUseCase
 import kotlinx.coroutines.flow.MutableStateFlow

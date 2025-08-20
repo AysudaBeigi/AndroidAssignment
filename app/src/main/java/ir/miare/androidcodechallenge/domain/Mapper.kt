@@ -3,9 +3,6 @@ package ir.miare.androidcodechallenge.domain
 import com.jabama.challenge.data.model.RepositoryDto
 import com.jabama.challenge.data.model.RequestAccessTokenDto
 import com.jabama.challenge.data.model.ResponseAccessTokenDto
-import ir.miare.androidcodechallenge.domain.model.Repository
-import ir.miare.androidcodechallenge.domain.model.RequestAccessToken
-import ir.miare.androidcodechallenge.domain.model.ResponseAccessToken
 
 internal fun RequestAccessToken.mapToRequestAccessTokenDto() = RequestAccessTokenDto(
     clientId = clientId,

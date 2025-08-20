@@ -11,9 +11,8 @@ import com.jabama.challenge.base.LoadableData
 import com.jabama.challenge.base.Loaded
 import com.jabama.challenge.base.Loading
 import com.jabama.challenge.base.NotLoaded
-import ir.miare.androidcodechallenge.domain.model.ResponseAccessToken
 import ir.miare.androidcodechallenge.domain.usecase.GetAccessTokenUseCase
-import ir.miare.androidcodechallenge.domain.usecase.SaveTokenUseCase
+import ir.miare.androidcodechallenge.domain.usecase.SaveIsFollowedUseCase
 import ir.miare.androidcodechallenge.domain.usecase.url
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -23,7 +22,7 @@ import kotlinx.coroutines.launch
 
 
 class AuthorizeViewModel(
-    private val saveTokenUseCase: SaveTokenUseCase,
+    private val saveIsFollowedUseCase: SaveIsFollowedUseCase,
     private val getAccessTokenUseCase: GetAccessTokenUseCase,
     private val coroutineDispatcherProvider: CoroutineDispatcherProvider,
 ) : ViewModel() {
@@ -46,7 +45,7 @@ class AuthorizeViewModel(
                 _state.update {
                     it.copy(loadableToken = Loaded(token))
                 }
-                saveTokenUseCase.execute(token = token.accessToken)
+                saveIsFollowedUseCase.execute(token = token.accessToken)
             }.onFailure { throwable ->
                 _state.update {
                     it.copy(loadableToken = Failed(throwable))

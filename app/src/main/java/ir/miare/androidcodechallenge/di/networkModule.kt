@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.Log
 import ir.logicbase.mockfit.MockFitConfig
 import ir.logicbase.mockfit.MockFitInterceptor
-import ir.miare.androidcodechallenge.data.RankingApiService
+import ir.miare.androidcodechallenge.data.api.RankingApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module

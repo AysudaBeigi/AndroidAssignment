@@ -1,7 +1,7 @@
 package ir.miare.androidcodechallenge.di
 
 import androidx.preference.PreferenceManager
-import ir.miare.androidcodechallenge.data.RankingApiService
+import ir.miare.androidcodechallenge.data.api.RankingApiService
 import org.koin.dsl.module
 import retrofit2.Retrofit
 
